@@ -28,9 +28,112 @@ header{
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url(img/img-hero-header.jpg);
 
     background-size: cover;
+    background-position: center;
 
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 20px;
+
+}
+
+header .logo{
+    width: 100px;
+    margin-left: 40px;
+
+    transition: border 0.8s;
+
+    border: solid 5px transparent;
+
+
+}
+
+header .logo:hover{
+    border: solid 5px black;
+}
+
+header .main-nav{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30%;
+
+    list-style: none;
+
+    text-transform: uppercase;
+
+}
+
+.main-nav li a{
+    border-bottom: solid 6px transparent;
+}
+header .main-nav li a:hover,
+header .main-nav li a:active{
+    padding-bottom: 4px;
+    border-bottom: solid 6px orange;
+    transition: border-bottom 0.4s;
 }
 
 header h1{
     margin: 0;
+    color: white;
+
+    text-transform: uppercase;
+
+    word-spacing: 15px;
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+}
+
+.hero-text-box{
+
+        position: absolute;
+        top: 40%;
+        left: 4%;
+        
+}
+
+.btn:link,
+.btn:visited{
+    border: solid 2px orange;
+    border-radius: 10px;
+    padding: 5px 25px;
+
+    margin-right: 10px;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: orange;
+
+
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: rgb(251, 179, 46);
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: orange;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: orange;
+    color: white;
 }
